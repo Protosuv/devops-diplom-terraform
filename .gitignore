@@ -2,6 +2,7 @@
 **/.terraform/*
 terraform/.terraform/
 terraform/certs/
+key/
 *.pem
 Templates/
 *plan
