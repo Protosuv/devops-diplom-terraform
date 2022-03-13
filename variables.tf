@@ -9,12 +9,12 @@ variable "aws-av-zone" {
 
 locals {
 web_instance_type_map = {
-  default = "t2.micro"
-  stage = "t3.micro"
+  stage = "t2.micro"
+  prod = "t3.micro"
   }
 web_instance_count_map = {
-  default = 1
-  stage = 3
+  stage = 1
+  prod = 3
   }
 instances = {
   "t2.micro" = data.aws_ami.ubuntu.id
