@@ -10,7 +10,7 @@ variable "aws-av-zone" {
 locals {
 web_instance_type_map = {
   stage = "t2.micro"
-  prod = "t3.micro"
+  prod = "t3.small"
   }
 web_instance_count_map = {
   stage = 1
@@ -18,6 +18,6 @@ web_instance_count_map = {
   }
 instances = {
   "t2.micro" = data.aws_ami.ubuntu.id
-  "t3.micro" = data.aws_ami.ubuntu.id
+  "t3.small" = data.aws_ami.ubuntu.id
   }
 }
