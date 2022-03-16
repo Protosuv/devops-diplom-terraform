@@ -12,6 +12,6 @@ module "vpc" {
 
   tags = {
     Terraform = "true"
-    Environment = "stage"
+    Environment = terraform.workspace
   }
 }

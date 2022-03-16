@@ -1,4 +1,4 @@
 
 output "region" {
-  value = "us-east-2"
+  value = "us-east-1"
 }

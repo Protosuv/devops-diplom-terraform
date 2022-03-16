@@ -11,7 +11,7 @@ output "caller_user" {
 }
 
 output "region" {
-  value = "us-east-2"
+  value = "us-east-1"
 }
 //private ip
 output "private_ip" {
