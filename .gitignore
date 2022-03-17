@@ -6,6 +6,7 @@ key/
 *.pem
 Templates/
 *plan
+prov/
 # .tfstate files
 *.tfstate
 *.tfstate.*
@@ -22,6 +23,7 @@ crash.log
 *.tf1
 mytest*
 *.hcl
+*.hcl_
 # Ignore override files as they are usually used to override resources locally and so
 # are not checked in
 override.tf
