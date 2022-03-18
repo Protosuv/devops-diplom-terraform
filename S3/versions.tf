@@ -1,8 +1,8 @@
 terraform {
   required_providers {
     aws = {
-      source  = "terraform-registry.storage.yandexcloud.net/hashicorp/aws"
-      # source  = "hashicorp/aws"
+      # source  = "terraform-registry.storage.yandexcloud.net/hashicorp/aws"
+      source  = "hashicorp/aws"
       version = "~> 3.57"
     }
   }

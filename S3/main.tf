@@ -6,14 +6,18 @@ provider "aws" {
 }
 
 
-resource "aws_s3_bucket" "netology-diplom-bucket" {
-  bucket = "netology-diplom-bucket"
-  acl    = "private"
-
+resource "aws_s3_bucket" "protosuv-bucket" {
+  bucket = "netology-diplom-bucket-protosuv"
+  
   tags = {
     Name        = "My bucket"
     Environment = "prod"
   }
+}
+
+resource "aws_s3_bucket_acl" "netology-diplom-bucket-protosuv" {
+  bucket = aws_s3_bucket.protosuv-bucket.id
+  acl    = "private"
 }
 
 resource "aws_dynamodb_table" "dynamodb-terraform-lock" {

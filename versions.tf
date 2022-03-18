@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     aws = {
-      source  = "terraform-registry.storage.yandexcloud.net/providers/hashicorp/aws"
+      source  = "hashicorp/aws"
       version = "~> 3.57"
     }
   }
@@ -16,10 +16,10 @@ terraform {
   #     name = "stage"
   #   }
   backend "s3" {
-    bucket = "netology-diplom-bucket"
+    bucket = "netology-diplom-bucket-protosuv"
     encrypt = true
     key = "netology/test-infra/terraform.tfstate"
-    region = "us-east-2"
+    region = "us-east-1"
     dynamodb_table = "terraform-lock"
     }
   # }
