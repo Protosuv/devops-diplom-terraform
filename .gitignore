@@ -7,6 +7,7 @@ key/
 Templates/
 *plan
 prov/
+output
 # .tfstate files
 *.tfstate
 *.tfstate.*
